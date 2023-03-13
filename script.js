@@ -107,5 +107,7 @@ document.querySelector('.btn btn--new').addEventListener("click",(event)=>{
      document.getElementById('current--1').textContent=0;
      document.getElementById('score--0').textContent=0;
      document.getElementById('score--1').textContent=0;
+     document.querySelector('.btn--hold').disabled=false;
+     document.querySelector('.btn--roll').disabled=false;  
 
 })
