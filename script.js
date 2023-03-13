@@ -84,5 +84,14 @@ document.querySelector('.btn--hold').addEventListener('click',()=>{
         if(firstPlayerScore>=100){
             document.querySelector('.dice').src="";
             document.querySelector('.dice').alt="Winner-1";         
-        }      
+            document.querySelector('.btn--hold').disabled=true;
+            document.querySelector('.btn--roll').disabled=true;
+
+        }
+        else if(secondPlayerScore>=100){
+            document.querySelector('.dice').src="";
+            document.querySelector('.dice').alt="Winner-2";   
+            document.querySelector('.btn--hold').disabled=true;
+            document.querySelector('.btn--roll').disabled=true;  
+        }       
 });
