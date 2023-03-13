@@ -97,8 +97,11 @@ document.querySelector('.btn--hold').addEventListener('click',()=>{
 });
 
 
-document.querySelector('.btn btn--new').addEventListener("click",(event)=>{
+document.querySelector('.btn--new').addEventListener("click",(event)=>{
+
+   
     event.preventDefault();
+    console.log("New Button");
      isFirstPlayerTurn =true;
      currentScore=0;
      firstPlayerScore=0;
@@ -109,5 +112,6 @@ document.querySelector('.btn btn--new').addEventListener("click",(event)=>{
      document.getElementById('score--1').textContent=0;
      document.querySelector('.btn--hold').disabled=false;
      document.querySelector('.btn--roll').disabled=false;  
+     console.log(document.querySelector('.btn--hold'));
 
 })
