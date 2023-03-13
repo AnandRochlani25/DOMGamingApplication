@@ -95,3 +95,17 @@ document.querySelector('.btn--hold').addEventListener('click',()=>{
             document.querySelector('.btn--roll').disabled=true;  
         }       
 });
+
+
+document.querySelector('.btn btn--new').addEventListener("click",(event)=>{
+    event.preventDefault();
+     isFirstPlayerTurn =true;
+     currentScore=0;
+     firstPlayerScore=0;
+     secondPlayerScore=0;
+     document.getElementById('current--0').textContent=0;
+     document.getElementById('current--1').textContent=0;
+     document.getElementById('score--0').textContent=0;
+     document.getElementById('score--1').textContent=0;
+
+})
